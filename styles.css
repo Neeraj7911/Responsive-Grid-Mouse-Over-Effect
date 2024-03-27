@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*repeat(auto-fit, minmax(150px, 1fr));*/
+    gap: 10px;
+  }
+  .image-container {
+    transition: opacity 0.5s;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  .image-grid:hover .image-container {
+    opacity: 0.3;
+  }
+  .image-container:hover {
+    opacity: 1 !important;
+  }
